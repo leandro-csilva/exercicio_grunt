@@ -1,0 +1,78 @@
+@corPrimaria: #119beb;
+@corSecundaria: #fff;
+@corDestaque: #e6feff;
+@fonteDoTexto: Roboto, sans-serif;
+@fonteDoTitulo: Russo One, sans-serif;
+
+@breakpointMobile: ~"(max-width:767px)";
+@breakpointTablet: ~"(min-width:768px)";
+
+body {
+    font-family: @fonteDoTexto;
+}
+
+.navbar {
+    background-color: @corPrimaria;
+}
+
+#cabecalho .nav .nav-link.active{
+    background-color: @corSecundaria;
+    color: @corPrimaria;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-produtos .nav-link.active:hover {
+    color: @corSecundaria;
+}
+
+.navbar-toggler {
+    background-color: @corDestaque;
+}
+
+.section-title {
+    font-family: @fonteDoTitulo;
+}
+
+#sobre-a-loja,
+#fale-conosco {
+    background-color: @corDestaque;
+}
+
+.text-colored {
+    color: @corPrimaria;
+}
+
+.nav-produtos .nav-link.active,
+#fale-conosco button,
+.tab-pane button,
+.tab-pane button:hover {
+    background-color: @corPrimaria;
+    color: @corSecundaria;
+}
+
+.nav-produtos .nav-link:hover {
+    color: @corPrimaria;
+}
+
+.social-links {
+    li {
+        list-style: none;
+        display: inline;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+.carousel-item img {
+    @media @breakpointMobile {
+        height: 280px;
+    }
+
+    @media @breakpointTablet {
+        width: 100%;
+    }
+}
